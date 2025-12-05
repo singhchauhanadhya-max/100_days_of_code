@@ -1,0 +1,17 @@
+
+#include<stdio.h>
+void main()
+{
+    int n,remaining,product=1;
+    printf("enter the number");
+    scanf("%d",&n);
+    while(n>0)
+    {
+        remaining=n%10;
+        if(remaining%2!=0)
+        product=product*remaining;
+        n=n/10;
+        
+    }
+    printf("The product of its odd digits id %d",product);
+}    
