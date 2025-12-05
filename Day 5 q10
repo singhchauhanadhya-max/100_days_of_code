@@ -1,0 +1,13 @@
+#include<stdio.h>
+int main()
+{
+    int hour,minute,remaining,second,secs;
+    printf("enter seconds of clock");
+    scanf("%d",&second);
+    hour=second/3600;
+    remaining=second%3600;
+    minute=remaining/60;
+    secs=remaining%60;
+    printf("time is =%02d:%02d:%2d",hour,minute,secs);
+    return 0;
+}
