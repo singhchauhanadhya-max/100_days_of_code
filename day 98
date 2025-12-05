@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <stdlib.h>
+enum Department 
+{   HR = 1,
+    SALES,
+    IT,
+    FINANCE
+};
+
+struct Employee 
+{
+    char name[30];
+    int id;
+    float salary;
+    enum Department dept;
+};
